@@ -8,7 +8,7 @@ import {
 
 import Host from './Host';
 import SampleContext from './SampleContext';
-import { LibSampleContext } from '../../utils';
+import { LibSampleContext } from '@mi-wmf/utils';
 
 const RemoteSimbaApp = React.lazy(() => import("simba/App"));
 const RemotePumbaaApp = React.lazy(() => import("pumbaa/App"));

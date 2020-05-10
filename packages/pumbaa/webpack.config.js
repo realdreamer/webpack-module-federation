@@ -6,6 +6,11 @@ const path = require("path");
 module.exports = {
   entry: "./src/index",
   mode: "development",
+  resolve: {
+    alias: {
+      '@mi-wmf/utils': path.resolve(__dirname, '../utils/index.js'),
+    },
+  },
   devServer: {
     contentBase: path.join(__dirname, "build"),
     port: 3003,
@@ -41,8 +46,8 @@ module.exports = {
       shared: [
         "react",
         "react-dom",
-        // "@mi-wmf/utils",
-        "../utils",
+        "@mi-wmf/utils",
+        // "../utils",
         // "../console/src/SampleContext"
       ],
     }),

@@ -6,6 +6,11 @@ const path = require("path");
 module.exports = {
   entry: "./src/index",
   mode: "development",
+  resolve: {
+    alias: {
+      '@mi-wmf/utils': path.resolve(__dirname, '../utils/index.js'),
+    },
+  },
   devServer: {
     contentBase: path.join(__dirname, "build"),
     port: 3001,
@@ -44,9 +49,9 @@ module.exports = {
         "react",
         "react-dom",
         "react-router-dom",
-        // "@mi-wmf/utils"
+        "@mi-wmf/utils",
         './src/SampleContext',
-        "../utils",
+        // "../utils",
       ],
     }),
     new HtmlWebpackPlugin({
