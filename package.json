@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "lerna run --scope @mi-wmf/* --parallel start",
+    "build": "lerna run --scope @mi-wmf/* build",
+    "serve": "lerna run --scope @mi-wmf/* --parallel serve",
+    "clean": "lerna run --scope @mi-wmf/* --parallel clean"
+  },
+  "name": "webpack-module-federation",
+  "devDependencies": {
+    "lerna": "^3.20.2"
+  }
+}

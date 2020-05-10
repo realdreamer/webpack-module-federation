@@ -1,0 +1,11 @@
+{
+  "name": "@mi-wmf/utils",
+  "version": "0.0.0",
+  "private": true,
+  "peerDependencies": {
+    "react": "^16.13.1"
+  },
+  "devDependencies": {
+    "react": "^16.13.1"
+  }
+}
