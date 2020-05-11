@@ -11,7 +11,7 @@ import SampleContext from './SampleContext';
 import { LibSampleContext } from '@mi-wmf/utils';
 
 const RemoteSimbaApp = React.lazy(() => import("simba/App"));
-const RemotePumbaaApp = React.lazy(() => import("pumbaa/App"));
+const RemotePumbaaApp = React.lazy(() => import("@mi/pumbaa/App"));
 
 export default function ConsoleApp() {
 

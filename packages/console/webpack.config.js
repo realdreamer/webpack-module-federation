@@ -40,7 +40,7 @@ module.exports = {
       filename: 'consoleApp.js',
       remotes: {
         simba: "simba",
-        pumbaa: "pumbaa",
+        "@mi/pumbaa": "mi_pumbaa",
       },
       exposes: {
         SampleContext: './src/SampleContext',

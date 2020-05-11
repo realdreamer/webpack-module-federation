@@ -34,8 +34,8 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: "pumbaa",
-      library: { type: "var", name: "pumbaa" },
+      name: "pumbaaRemote",
+      library: { type: "var", name: "mi_pumbaa" },
       filename: 'pumbaa.js',
       remotes: {
         consoleApp: 'consoleApp',
